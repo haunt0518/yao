@@ -1,0 +1,28 @@
+a=['小明','小红','小刚']
+for i in range(3):
+    a.append(a[0])
+    del a[0]
+    print(a)
+
+
+b=['小明','小红','小刚']
+for i in range(3):
+    b1=b.pop(0)
+    b.append(b1)
+    print(b)
+
+c=['小明','小红','小刚']
+n=0
+while n<3:
+    print(c)
+    c.append(c[0])
+    del c[0]
+    n=n+1
+
+d=['小明','小红','小刚']
+m=0
+while m<3:
+    print(d)
+    d1=d.pop(0)
+    d.append(d1)
+    m=m+1
