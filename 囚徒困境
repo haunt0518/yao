@@ -1,0 +1,19 @@
+c=[]
+d=0
+while True:
+    a = input('嫌疑人a是否认罪')
+    b = input('嫌疑人b是否认罪')
+    d=d+1
+    c.append([a,b])
+    if a=='认罪' and b=='认罪':
+        print('大胆，各判10年')
+    elif a=='认罪' and b=='不认':
+        print('a判20年，b判1年')
+    elif a=='不认' and b=='认罪':
+        print('a判1年，b判20年')
+    else:
+        print('很好，各判3年')
+        break
+print('第'+str(d)+'得到最优解')
+for i in range(d):
+    print('第'+str(i+1)+'实验者选择是'+str(c[i]))
